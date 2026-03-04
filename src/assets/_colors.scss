@@ -1,0 +1,96 @@
+// Brand Colors
+$color-primary: #f2122f;
+$color-secondary: #0f50a6;
+
+// Primary Palette
+$primary-100: #fff1f2;
+$primary-200: #ffe4e2;
+$primary-300: #ffcac9;
+$primary-400: #ffb0a3;
+$primary-500: #ff616e;
+$primary-600: #ff3041;
+$primary-700: #f2122f;
+$primary-800: #cb0a1a;
+$primary-900: #a80c19;
+$primary-950: #8a121c;
+$primary-1000: #4c0309;
+
+// Secondary Palette
+$secondary-100: #eaf9ff;
+$secondary-200: #e0f0ff;
+$secondary-300: #b8e6ff;
+$secondary-400: #83d9ff;
+$secondary-500: #49c2ff;
+$secondary-600: #1aafff;
+$secondary-700: #0882ff;
+$secondary-800: #016bf4;
+$secondary-900: #0855c5;
+$secondary-950: #0f50a6;
+$secondary-1000: #0e2e5d;
+
+// State Colors
+$color-info: #2f80ed;
+$color-success: #27ae60;
+$color-warning: #e2b93b;
+$color-error: #eb5757;
+
+// Neutral Colors
+$color-black: #000000;
+$color-black-2: #1d1d1d;
+$color-black-3: #282828;
+$color-white: #ffffff;
+
+// Grey Scale - DEPRECATED - Use cs-gray-* instead
+$gray-100: #333333; // DEPRECATED - Use cs-gray-700
+$gray-200: #4f4f4f; // DEPRECATED - Use cs-gray-600
+$gray-300: #828282; // DEPRECATED - Use cs-gray-500
+$gray-400: #bdbdbd; // DEPRECATED - Use cs-gray-400
+$gray-500: #e0e0e0; // DEPRECATED - Use cs-gray-300
+$gray-border: #BDBDBD; // DEPRECATED - Use cs-gray-400
+
+
+$cs-gray-900: #111111;
+$cs-gray-700: #374151;
+$cs-gray-600: #4b5563;
+$cs-gray-500: #6b7280;
+$cs-gray-400: #9ca3af;
+$cs-gray-300: #d1d5db;
+$cs-gray-200: #e5e7eb;
+$cs-gray-100: #f9fafb;
+
+// Colors for workshop system sections
+$color-reception: #f44315;
+$color-diagnosis: #4caf50;
+$color-mounting: #616161;
+$color-admin: #455a64;
+$color-testing: #2196f3;
+$color-parts: #ff9800;
+$color-accounting: #9c27b0;
+$color-assembly: #795548;
+
+// =====================
+// Activity Category Colors
+// =====================
+$category-transmission: #2563eb;
+$category-transmission-light: #dbeafe;
+
+$category-pumps-steering: #7c3aed;
+$category-pumps-steering-light: #ede9fe;
+
+$category-hydraulic-steering: #0891b2;
+$category-hydraulic-steering-light: #cffafe;
+
+$category-electrical-system: #eab308;
+$category-electrical-system-light: #fef9c3;
+
+$category-hydrobooster: #ea580c;
+$category-hydrobooster-light: #ffedd5;
+
+$category-valve-body: #dc2626;
+$category-valve-body-light: #fee2e2;
+
+$category-service: #16a34a;
+$category-service-light: #dcfce7;
+
+$category-maintenance: #64748b;
+$category-maintenance-light: #f1f5f9;

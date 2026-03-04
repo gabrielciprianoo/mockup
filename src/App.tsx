@@ -1,5 +1,7 @@
+import { Title } from './components';
+
 function App() {
-  return <h1>Hola Golden Gate</h1>;
+  return <Title>Hola Mundo</Title>;
 }
 
 export default App;
