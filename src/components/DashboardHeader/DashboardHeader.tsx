@@ -16,6 +16,8 @@ interface Props {
 export function DashboardHeader({ notificacionCount, notifOpen, onCambiarPerfil, onOpenNotificaciones }: Props) {
   return (
     <header className={styles.header}>
+      <span className={styles.brand}>Papersheet</span>
+
       <div className={styles.actions}>
         <button
           className={`${styles.bellBtn} ${notifOpen ? styles.bellBtnActive : ''}`}
