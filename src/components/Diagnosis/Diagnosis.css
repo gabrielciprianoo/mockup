@@ -1,0 +1,49 @@
+.diagnosis-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.diagnosis-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.diagnosis-header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.diagnosis-header .badge {
+  background: #4caf50;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.diagnosis-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+}
+
+.diagnosis-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .diagnosis-grid {
+    grid-template-columns: 1fr;
+  }
+}

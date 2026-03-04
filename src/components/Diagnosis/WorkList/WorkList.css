@@ -1,0 +1,152 @@
+.worklist-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.worklist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.worklist-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.worklist-title::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: #4caf50;
+  border-radius: 2px;
+}
+
+.worklist-count {
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.vehicle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vehicle-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: box-shadow 0.2s;
+}
+
+.vehicle-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.vehicle-info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 2px;
+}
+
+.vehicle-info span {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.vehicle-client {
+  font-size: 13px;
+  color: #374151;
+}
+
+.vehicle-tech {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tech-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #0f50a6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.tech-name {
+  font-size: 13px;
+  color: #374151;
+}
+
+.vehicle-status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.vehicle-status.review {
+  background: #dbeafe;
+  color: #2f80ed;
+}
+
+.vehicle-status.processing {
+  background: #dcfce7;
+  color: #27ae60;
+}
+
+.vehicle-status.waiting {
+  background: #fef9c3;
+  color: #e2b93b;
+}
+
+.vehicle-status.completed {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.vehicle-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.action-btn:hover {
+  background: #f1f5f9;
+  border-color: #4caf50;
+  color: #4caf50;
+}

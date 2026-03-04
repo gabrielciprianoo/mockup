@@ -1,7 +1,7 @@
-import { Title } from './components';
+import { Diagnosis } from './components';
 
 function App() {
-  return <Title>Hola Mundo</Title>;
+  return <Diagnosis />;
 }
 
 export default App;
