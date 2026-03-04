@@ -1,0 +1,163 @@
+.budget-container {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.budget-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.budget-title::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: #e2b93b;
+  border-radius: 2px;
+}
+
+.budget-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.budget-card {
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.budget-card.pending {
+  background: #fef9c3;
+}
+
+.budget-card.approved {
+  background: #dcfce7;
+}
+
+.budget-card.total {
+  background: #dbeafe;
+}
+
+.budget-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111111;
+}
+
+.budget-label {
+  font-size: 11px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.budget-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.budget-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.budget-id {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+  min-width: 50px;
+}
+
+.budget-info {
+  flex: 1;
+}
+
+.budget-vehicle {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111111;
+}
+
+.budget-desc {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.budget-amount {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111111;
+  min-width: 80px;
+  text-align: right;
+}
+
+.budget-status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.budget-status.pending {
+  background: #fef9c3;
+  color: #a80c19;
+}
+
+.budget-status.approved {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.budget-status.rejected {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.budget-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.btn-budget {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-approve {
+  background: #27ae60;
+  color: white;
+}
+
+.btn-approve:hover {
+  background: #219a52;
+}
+
+.btn-reject {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.btn-reject:hover {
+  background: #fecaca;
+}

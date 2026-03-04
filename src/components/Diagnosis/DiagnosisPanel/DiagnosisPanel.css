@@ -25,12 +25,13 @@
 
 .stats-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
 }
 
 .stat-card {
-  padding: 16px;
+  padding: 14px;
   border-radius: 8px;
   text-align: center;
 }
@@ -53,13 +54,13 @@
 }
 
 .stat-value {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 700;
   color: #111111;
 }
 
 .stat-label {
-  font-size: 12px;
+  font-size: 11px;
   color: #6b7280;
   margin-top: 4px;
 }
@@ -78,4 +79,121 @@
 
 .stat-card.info .stat-value {
   color: #2f80ed;
+}
+
+.charts-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.chart-container {
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.chart-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 12px;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 80px;
+  gap: 8px;
+}
+
+.bar-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.bar {
+  width: 100%;
+  max-width: 24px;
+  border-radius: 4px 4px 0 0;
+  transition: height 0.3s;
+}
+
+.bar.mon { background: #0f50a6; }
+.bar.tue { background: #4caf50; }
+.bar.wed { background: #e2b93b; }
+.bar.thu { background: #f2122f; }
+.bar.fri { background: #2f80ed; }
+
+.bar-label {
+  font-size: 10px;
+  color: #9ca3af;
+}
+
+.pie-chart {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pie-visual {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #27ae60 0deg 120deg,
+    #e2b93b 120deg 200deg,
+    #2f80ed 200deg 280deg,
+    #f2122f 280deg 360deg
+  );
+  position: relative;
+}
+
+.pie-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+}
+
+.pie-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #374151;
+}
+
+.legend-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.legend-color.completed { background: #27ae60; }
+.legend-color.processing { background: #e2b93b; }
+.legend-color.waiting { background: #2f80ed; }
+.legend-color.review { background: #f2122f; }
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .charts-section {
+    grid-template-columns: 1fr;
+  }
 }

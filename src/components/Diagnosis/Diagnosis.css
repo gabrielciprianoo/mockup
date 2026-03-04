@@ -32,18 +32,40 @@
 
 .diagnosis-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 380px 1fr;
   gap: 24px;
 }
 
 .diagnosis-sidebar {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
+}
+
+.diagnosis-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.diagnosis-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 1400px) {
+  .diagnosis-bottom-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 1200px) {
   .diagnosis-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .diagnosis-bottom-grid {
     grid-template-columns: 1fr;
   }
 }

@@ -1,6 +1,10 @@
 import { DiagnosisPanel } from './DiagnosisPanel/DiagnosisPanel';
 import { WorkList } from './WorkList/WorkList';
 import { IntakeForm } from './IntakeForm/IntakeForm';
+import { Notifications } from './Notifications/Notifications';
+import { VehicleHistory } from './VehicleHistory/VehicleHistory';
+import { PhotoUpload } from './PhotoUpload/PhotoUpload';
+import { BudgetApproval } from './BudgetApproval/BudgetApproval';
 import './Diagnosis.css';
 
 export function Diagnosis() {
@@ -14,9 +18,18 @@ export function Diagnosis() {
       <div className="diagnosis-grid">
         <div className="diagnosis-sidebar">
           <DiagnosisPanel />
-          <IntakeForm />
+          <Notifications />
+          <BudgetApproval />
         </div>
-        <WorkList />
+        
+        <div className="diagnosis-main">
+          <WorkList />
+          <div className="diagnosis-bottom-grid">
+            <IntakeForm />
+            <PhotoUpload />
+            <VehicleHistory />
+          </div>
+        </div>
       </div>
     </div>
   );
