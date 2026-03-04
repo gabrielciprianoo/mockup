@@ -1,26 +1,10 @@
 .budget-container {
   background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 16px;
 }
 
 .budget-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #111111;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.budget-title::before {
-  content: '';
-  width: 4px;
-  height: 20px;
-  background: #e2b93b;
-  border-radius: 2px;
+  display: none;
 }
 
 .budget-summary {
