@@ -1,7 +1,8 @@
-import { Title } from './components';
+import './styles/global.css'
+import { Dashboard } from './components/Dashboard/Dashboard'
 
 function App() {
-  return <Title>Hola Mundo</Title>;
+  return <Dashboard />
 }
 
-export default App;
+export default App

@@ -1,0 +1,117 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow var(--transition);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.urgente {
+  border-color: rgba(220, 38, 38, 0.2);
+  background: var(--danger-bg);
+}
+
+.top {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.iconWrap {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  background: var(--ink-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconWrapUrgent {
+  background: rgba(220, 38, 38, 0.1);
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  color: var(--text-secondary);
+}
+
+.urgente .icon {
+  color: var(--danger);
+}
+
+.mensaje {
+  font-size: 13px;
+  color: var(--text-primary);
+  flex: 1;
+  line-height: 1.4;
+}
+
+.dismissBtn {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background var(--transition), color var(--transition);
+}
+
+.dismissBtn:hover {
+  background: var(--ink-100);
+  color: var(--text-primary);
+}
+
+.dismissIcon {
+  width: 13px;
+  height: 13px;
+}
+
+.accionBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 10px;
+  border-radius: var(--radius-md);
+  border: 1px solid;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: opacity var(--transition);
+}
+
+.accionBtn:hover {
+  opacity: 0.8;
+}
+
+.accionIcon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.accionArrow {
+  width: 13px;
+  height: 13px;
+  margin-left: auto;
+  opacity: 0.5;
+}

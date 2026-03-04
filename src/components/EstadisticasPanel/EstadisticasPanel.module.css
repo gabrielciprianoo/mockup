@@ -1,0 +1,122 @@
+.panel {
+  padding: 32px 0 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* ── Greeting ── */
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 28px;
+}
+
+.greetingLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.greetingName {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+}
+
+.greetingMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.metaIcon {
+  width: 14px;
+  height: 14px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.turnoChip {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--success);
+  background: var(--success-bg);
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(5, 150, 105, 0.15);
+}
+
+.insignias {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-shrink: 0;
+}
+
+/* ── Commands ── */
+.comandosSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+/* ── Secondary section ── */
+.secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding-top: 4px;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+
+.secLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.secRight {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.secLabel {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.chartCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  margin-top: 4px;
+}
+
+.activityCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+}
